@@ -1,0 +1,7 @@
+__pycache__
+*.pyc
+.git
+.gitignore
+neuromend_output
+experiment_data
+*.ipynb
