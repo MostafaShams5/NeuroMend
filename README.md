@@ -41,10 +41,8 @@ Tested on Pothole Detection (Road Damage Dataset). Full benchmarks available in 
 The repository includes a Docker configuration to handle dependencies for PyTorch and CUDA.
 
 ```bash
-# 1. Build the image
 docker build -t neuromend .
 
-# 2. Run the pipeline
 # Mount your local data folder to /data inside the container
 docker run --gpus all -v $(pwd)/data:/data -v $(pwd)/results:/results \
     neuromend --data_dir /data --output_dir /results --target_class pothole
